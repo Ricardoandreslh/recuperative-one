@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap');
+
+
 *{
   margin: 0;
   padding: 0;
-  
+  font-family: Urbanist, cursive;
+  --azul: #0F52BA;
+  --blanco: #faf0e6;
 }
 
 /* Banner Parallax 
@@ -40,7 +45,7 @@
 }*/
 
 header{
-  background-color: #2469A0;
+  background-color: var(--azul);
 }
 
 .main-header{
@@ -48,10 +53,18 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 0 0.4rem;
+  background-color: var(--azul);
 }
 
+h1{
+  padding-top: 64px;
+  font-size: 48px;
+  line-height: 1.08349;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
 .main-logo{
   color: white;
   font-size:32px;
@@ -75,7 +88,7 @@ header{
 }
 
 .nav-links{
-  background-color:#10bce3;
+  background-color: var(--azul);
   display: flex;
   flex-direction: column;
   width: 70%;
@@ -86,7 +99,6 @@ header{
 
 .link-item{
   margin-top: 2rem;
-  color: wh;
   text-decoration: none;
   font-weight: bold;
   position: relative;
@@ -169,6 +181,7 @@ header{
     margin-left: 0;
     flex-basis: 70%;
     height: 100%;
+    background-color: var(--azul);
   }
 
   .nav-links{
@@ -177,7 +190,6 @@ header{
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
-    background: #2469A0;
   }
 
   .link-item{
@@ -194,7 +206,7 @@ header{
 
 footer {
   text-align: center;
-  background-color:  #2469A0;
+  background-color:  var(--azul);
   position: absolute;
   bottom: 0;
   width: 100%;
