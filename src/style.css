@@ -252,3 +252,5 @@ footer {
   height: 120px;
   color: white;
 }
+
+@import "./videos.css";
