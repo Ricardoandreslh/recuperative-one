@@ -1,1 +1,346 @@
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
+  \*****************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap);
+/*!******************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/videos.css ***!
+  \******************************************************************/
+.cont-slider {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
 
+.videos {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.video-UP {
+  width: 33%;
+  margin-right: 1rem;
+  opacity: 80%;
+}
+
+.video-PP {
+  width: 66%;
+  min-height: 5rem;
+}
+
+.video-SP {
+  width: 33%;
+  height: auto;
+  margin-left: 1rem;
+  opacity: 80%;
+}
+
+.botones {
+  z-index: 1;
+  width: 200px;
+  height: 100px;
+  border-radius: 100%;
+  border-color: rgb(0, 0, 0);
+  box-shadow: none;
+  background: transparent;
+  font-size: 50px;
+}
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css (1) ***!
+  \*********************************************************************/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Urbanist, cursive;
+  --azul: #0F52BA;
+  --blanco: #faf0e6;
+  --fondo: #35477d
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position:absolute
+ }
+ 
+ main {
+  flex-grow: 1;
+ }
+
+/* Banner Parallax
+.main-header{
+  height: 600px;
+  opacity: 0.5;
+  background-image: url("./images/software-developer.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* Fin Parallax */
+
+.main-header > h1 {
+  text-align: center;
+}
+
+/* Agregando secciones
+.seccion-1 {
+  background-color: #2469a0;
+  height:25em;
+}
+.seccion-2 {
+  background-color: #2469a0;
+  height:25em;
+}
+.seccion-3 {
+  background-color: #2469a0;
+  height:25em;
+}*/
+
+header{
+  background-color: var(--azul);
+}
+
+.main-header{
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.4rem;
+  background-color: var(--azul);
+}
+
+h1{
+  padding-top: 64px;
+  font-size: 48px;
+  line-height: 1.08349;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+
+h2{
+  padding-top: 72px;
+  font-size: 34px;
+  line-height: 1.125;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+
+h3{
+  padding-top: 72px;
+  font-size: 26px;
+  line-height: 1.125;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+.main-logo{
+  color: white;
+  font-size:32px;
+  text-decoration:none;
+}
+
+.main-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  margin-left: -100%;
+  transition: all .2s linear;
+  background-color: rgba(0,0,0,.7);
+  z-index: 100;
+}
+
+.main-nav.show{
+  margin-left: 0;
+}
+
+.nav-links{
+  background-color: var(--azul);
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.link-item{
+  margin-top: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  color: #ffffff;
+}
+
+.link-item::after {
+  position: absolute;
+  content: "";
+  background-color: white;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  transition: 0.3s ease all;
+}
+
+.link-item:hover::after {
+  width: 100%;
+}
+
+.button-menu{
+  z-index: 200;
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  background: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button-menu span{
+  width: 37px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+  transform-origin: 4px 0px;
+  transition: all .2s linear;
+}
+
+.formulario {
+  background: var(--azul);
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  justify-content: center;
+  padding: 40px;
+  color: var(--blanco)
+  
+ }
+
+  input[type="email"], input [type="text"],  textarea {
+  width: 300px;
+  height: 30px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: none; 
+}
+
+input[type="submit"] {
+  width: 100px; 
+  height: 30px; 
+  background-color: var(--fondo); 
+  color:var(--blanco); 
+  border:none; 
+  border-radius:5px; 
+  cursor:pointer; 
+  margin-bottom: 20px;  
+}
+
+.container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.image {
+   flex-basis: 30%;
+   box-sizing: border-box;
+}
+
+.image img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: auto;
+   height:auto;
+}
+
+p{
+  text-align: center;
+  margin-top: 10px;
+
+}
+/*Acción Open y Close de Menú*/
+
+.button-menu.close span {
+  opacity: 1;
+  transform: rotate(45deg) translate(0px, 0px);
+  background: #ffffff;
+}
+
+.button-menu.close span:nth-child(2){
+  transform: rotate(-45deg) translate(-8px, 5px);
+}
+
+.button-menu.close span:nth-child(3){
+  display: none;
+}
+
+
+
+
+/*Responsive*/
+
+@media screen and (min-width:768px) {
+  .button-menu{
+    display: none;
+  }
+
+  .main-logo{
+    flex-basis: 30%;
+  }
+
+  .main-nav{
+    position: static;
+    margin-left: 0;
+    flex-basis: 70%;
+    height: 100%;
+    background-color: var(--azul);
+  }
+
+  .nav-links{
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .link-item{
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 2rem;
+  }
+
+}
+
+
+
+/* Pie de Página*/
+
+footer {
+  text-align: center;
+  background-color:  var(--azul);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  color: white;
+}
