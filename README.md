@@ -6,8 +6,6 @@ _Espero les guste.._
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
 * [Webpack](https://webpack.js.org/)
 
 
