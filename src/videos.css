@@ -1,0 +1,41 @@
+.cont-slider {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.videos {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.video-UP {
+  width: 33%;
+  margin-right: 1rem;
+  opacity: 80%;
+}
+
+.video-PP {
+  width: 66%;
+  min-height: 5rem;
+}
+
+.video-SP {
+  width: 33%;
+  height: auto;
+  margin-left: 1rem;
+  opacity: 80%;
+}
+
+.botones {
+  z-index: 1;
+  width: 200px;
+  height: 100px;
+  border-radius: 100%;
+  border-color: rgb(0, 0, 0);
+  box-shadow: none;
+  background: transparent;
+  font-size: 50px;
+}

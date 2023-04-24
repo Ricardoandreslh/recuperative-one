@@ -15,7 +15,7 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 
 
 * **Genesis Vásquez** - [GenefvrSoft]
-* **Leonardo Mendoza** - [fulanitodetal]
+* **Leonardo Mendoza** - [mendezleoa]
 * **Ricardo Andres** - [Ricardoandreslh]
 * **Angel Arraiz** - [arrayz_code]
 
