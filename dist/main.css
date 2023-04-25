@@ -63,6 +63,7 @@
 }
 
 /* Banner Parallax */
+<<<<<<< HEAD
 body {
   min-height: 100vh;
   display: flex;
@@ -73,6 +74,8 @@ body {
  main {
   flex-grow: 1;
  }
+=======
+>>>>>>> upstream/master
 
 .main-header{
   height: 600px;  background-image: url(f13a030dbbe7854fc3cb.jpg);
@@ -556,7 +559,11 @@ footer {
   margin-top: 10%;
   text-align: center;
   background-color:  var(--azul);
+<<<<<<< HEAD
   position: relative;
+=======
+  /* position: absolute; */
+>>>>>>> upstream/master
   bottom: 0;
   width: 100%;
   height: 120px;

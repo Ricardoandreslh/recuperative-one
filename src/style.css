@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap');
 
 *{
@@ -514,4 +515,317 @@ footer {
   color: white;
 }
 
+=======
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Urbanist, cursive;
+  --azul: #0F52BA;
+  --blanco: #faf0e6;
+  --gris: #ececec;
+  --verde: #3DD6AF;
+  --verdeOscuro: #0f4739;
+}
+
+/*Parte Genesis Vasquez 
+
+/* Banner Parallax
+
+.main-header{
+  height: 600px;
+  opacity: 0.5;
+  background-image: url("./images/software-developer.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Fin Parallax */
+
+.main-header > h1 {
+  text-align: center;
+}
+
+/* Agregando secciones
+
+.seccion-1 {
+  background-color: #2469a0;
+  height:25em;
+}
+
+.seccion-2 {
+  background-color: #2469a0;
+  height:25em;
+}
+
+.seccion-3 {
+  background-color: #2469a0;
+  height:25em;
+}*/
+
+header{
+  background-color: var(--azul);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-header{
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.4rem;
+  background-color: var(--azul);
+}
+
+h1{
+  padding-top: 64px;
+  font-size: 48px;
+  line-height: 1.08349;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+.main-logo{
+  color: white;
+  font-size:32px;
+  text-decoration:none;
+}
+
+.main-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  margin-left: -100%;
+  transition: all .2s linear;
+  background-color: rgba(0,0,0,.7);
+  z-index: 100;
+}
+
+.main-nav.show{
+  margin-left: 0;
+}
+
+.nav-links{
+  background-color: var(--azul);
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.link-item{
+  margin-top: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  color: #ffffff;
+}
+
+.link-item::after {
+  position: absolute;
+  content: "";
+  background-color: white;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  transition: 0.3s ease all;
+}
+
+.link-item:hover::after {
+  width: 100%;
+}
+
+.button-menu{
+  z-index: 200;
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  background: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button-menu span{
+  width: 37px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+  transform-origin: 4px 0px;
+  transition: all .2s linear;
+}
+
+.ventana-texto-1 {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  max-width: 768px;
+}
+
+.ventana-texto-1 p {
+  font-weight: bold;
+  margin-right: 2.5rem;
+}
+
+.bg-grey{
+  background-color: var(--gris);
+}
+
+.btn-green {
+  width: fit-content;
+  padding: 1rem 3rem;
+  background-color: var(--verde);
+  border-style: none;
+  border-radius: 30px;
+}
+
+.btn-green:hover {
+  background-color: var(--verdeOscuro);
+  color: var(--blanco);
+  cursor: pointer;
+}
+
+.label-text input {
+  font-size: 1em;
+  border-color: transparent;
+  margin: 0 0.5rem
+}
+
+.imagenes-stock {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 1200px;
+  justify-content: center;
+  align-content: center;
+}
+
+.imagenes-stock div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.imagenes-stock div img {
+  margin: 1rem;
+  width: 100%;
+  min-width: 250px;
+  box-shadow: 1px 1px 3px rgb(49, 49, 49);
+}
+
+.imagenes-stock div h2 {
+  margin-top: 1rem;
+  font-size: 16px;
+}
+
+/*Acción Open y Close de Menú*/
+
+.button-menu.close span {
+  opacity: 1;
+  transform: rotate(45deg) translate(0px, 0px);
+  background: #ffffff;
+}
+
+.button-menu.close span:nth-child(2){
+  transform: rotate(-45deg) translate(-8px, 5px);
+}
+
+.button-menu.close span:nth-child(3){
+  display: none;
+}
+
+
+
+
+/*Responsive*/
+
+@media screen and (max-width:980px) {
+  .imagenes-stock {
+    flex-wrap: wrap;
+  }
+
+  .imagenes-stock div{
+    width: 40%;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .button-menu{
+    display: none;
+  }
+
+  .main-logo{
+    flex-basis: 30%;
+  }
+
+  .main-nav{
+    position: static;
+    margin-left: 0;
+    flex-basis: 70%;
+    height: 100%;
+    background-color: var(--azul);
+  }
+
+  .nav-links{
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .link-item{
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 2rem;
+  }
+
+  .imagenes-stock {
+    flex-direction: row;
+  }
+
+}
+
+
+iframe{
+  width: 100%;
+  height: 250px;
+  bottom:0px;
+  right:0px;
+}
+/* Pie de Página*/
+
+footer {
+  margin-top: 10%;
+  text-align: center;
+  background-color:  var(--azul);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  color: white;
+}
+
+>>>>>>> upstream/master
 @import "./videos.css";
