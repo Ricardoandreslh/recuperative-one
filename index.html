@@ -7,50 +7,75 @@
     <title>Front End I</title>
     <link rel="stylesheet" href="dist/main.css">
     <link rel="shortcut icon" href="public/img/ux.png">
-
 </head>
 <body>
   <body>
     <!-- MENU HAMBURGUESA RESPONSIVE -->
     <header class="main-header" >
-     <a class="main-logo" href="" >
-       <strong>FRONT END I</strong>
-     </a>
-     <nav id="nav" class="main-nav" >
-       <div class="nav-links" >
-         <a class="link-item" href="#" >Inicio</a>
-         <a class="link-item" href="#" >Servicios</a>
-         <a class="link-item" href="#" >Productos</a>
-         <a class="link-item" href="#" >Acerca de Nosotros</a>
-       </div>
-     </nav>
-     <button id="button-menu" class="button-menu" >
-       <span></span>
-       <span></span>
-       <span></span>
-     </button>
+      <div class="nav-bar">
+        <a class="main-logo" href="" >
+          <strong>FRONT END I</strong>
+        </a>
+        <nav id="nav" class="main-nav" >
+          <div class="nav-links" >
+            <a class="link-item" href="#" >Inicio</a>
+            <a class="link-item" href="#" >Servicios</a>
+            <a class="link-item" href="#" >Productos</a>
+            <a class="link-item" href="#" >Acerca de Nosotros</a>
+          </div>
+        </nav>
+        <button id="button-menu" class="button-menu" >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="publicidad">
+        <h1>Desarrolla tus habilidades</h1>
+        <div class="botones">
+          <button class="btn-info">Precios</button>
+          <button class="btn-info">Detalles</button>
+        </div>
+      </div>
    </header>
- <main class="main-container">
-  <div class="section-content">
-     <section class="seccion-1">
-         <h1>
-          LANDING PAGE WEBSITE DESIGN TEMPLATE
-         </h1>
-         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, esse ad cum non deserunt perspiciatis sapiente quis iste adipisci at!
-         </p>
-     </section>
-     <section class="seccion-2">
-         <h2>
-             Como estas
-         </h2>
-     </section>
-     <section class="seccion-3">
-         <h3>
-             Bien y tu?
-         </h3>
-     </section>
-  </div>
+ <main>
+    <section class="seccion-1">
+      <h1>Por que debes certificarte con nosotros?</h1>
+      <p>En la actualidad vivimos en un mundo de constante evolucion, por ello es esencial formarse de manera continua. Esto permitira realizar profesionales mas competentes y cotizados en el mercado laboral. Hoy en dia, gracias a los avances tecnologicos se pueden realizar cursos integramente online que facilitan conseguir conocimientos muy utiles para un buen desempeno laboral
+      </p>
+    </section>
+    <section class="seccion-2">
+      <div class="wrapper-images-courses">
+        <img src="./src/images/Programacion_logica.jpg" alt="img_logica">
+        <h2>Logica de Programacion</h2>
+      </div>
+      <div class="wrapper-images-courses">
+        <img src="./src/images/diseweb.jpg" alt="img_logica">
+        <h2>Diseño web</h2>
+      </div>
+      <div class="wrapper-images-courses">
+        <img src="./src/images/autocad.jpg" alt="img_logica">
+        <h2>Autocad</h2>
+      </div>
+      <div class="wrapper-images-courses">
+        <img src="./src//images/excel.jpg" alt="img_logica">
+        <h2>Excel</h2>
+      </div>
+    </section>
+    <section class="seccion-3">
+        <h2>MAS INFORMACION</h2>    
+        <p>Para mantenerte actualizado con respecto a nuestros cursos</p>
+        <div class="contenido-formulario">
+          <h2>Formulario</h2>
+          <p>Ingresa tus datos para registrarte y conocer mas informacion</p>
+          <form>
+            <input type="text" placeholder="Ingrese correo">  
+            <input type="password" placeholder="Ingrese contraseña">   
+            <button>Guardar</button>   
+          </form>
+        </div>
+    </section>
+    <div class="vacio"></div>
   <section class="cont-slider">
     <button class="botones" id="atras">&#60</button>
     <div id="slider"></div>
@@ -80,19 +105,15 @@
  </main>
 
  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11991.56586386308!2d-70.6085400187169!3d9.316233030514466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6328692ebdd3d5%3A0xd3d8efa5fb790d11!2sValera%2C%20Trujillo!5e1!3m2!1ses!2sve!4v1682373480488!5m2!1ses!2sve" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <footer>
 
+    <pre> 
+      Copyright © 2023 | FRONT END I
 
-<!--
-       <footer>
+      <a href="https://github.com/arrayz-code/recuperative-one"><img src="src/images/github.png" alt="" id="git"></a>
+      </pre>
+  </footer>
 
- <pre>
- 
- Copyright © 2023 | FRONT END I
- 
- <a href="https://github.com/arrayz-code/recuperative-one"><img src="public/img/github.png" alt="" id="git"></a>
- </pre>
-       </footer>
-      -->
-       <script src="dist/main.js"></script>
+    <script src="dist/main.js"></script>
  </body>
  </html>
