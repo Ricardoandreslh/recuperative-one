@@ -6,8 +6,6 @@ _Espero les guste.._
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
 * [Webpack](https://webpack.js.org/)
 
 
@@ -22,7 +20,7 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia FRONT END I - mira el archivo LICENSE.md para detalles
+Este proyecto está bajo la Licencia FRONT END I 
 
 ## Expresiones de Gratitud 🎁
 
